@@ -1,0 +1,107 @@
+Last Update 21/06/2015
+
+-Persona
+	-ID*
+	-Nome e Cognome *
+	-Email*
+	-Password
+	-Data di creazione
+	-Compleanno
+	-Energia
+	-Forza
+	-Valuta
+	-Oro
+	-Fabbrica
+	-Compagnia
+	-Partito
+	-Unità militare
+	-Inventario*
+		-Cibo				( Q1 - Q10 )	//Erep
+		-Armi				( Q1 - Q10 )
+		-Case				( Q1 - Q10 )
+		-Biglietti			( Q1 - Q10 )
+		-Energizzanti
+	-Skill
+		-Produzione cibo
+		-Manifattura
+		-Costruzione case
+
+-Compagnia
+	-ID*	
+	-Nome*
+	-Valuta
+	-Oro
+	-Inventario*
+		-Cibo				( Q1 - Q10 )
+		-Armi				( Q1 - Q10 )
+		-Case				( Q1 - Q10 )
+		-Biglietti			( Q1 - Q10 )
+		-Materie Prime		( Q1 - Q10 )
+	-Fabbriche
+		-ID delle fabbriche
+	-Proprietario
+		-Cambio nome compagnia
+		-Scegliere manager
+		-Gestire valuta e oro
+		-Gestione inventario
+		-Settare min skill
+	-Manager
+		Checklist:
+		-Vice
+		-Finanze
+		-Gestire valuta e oro
+		-Gestione inventario
+		-Settare minimo skill
+
+-Stato
+	-ID*
+	-Nome*
+	-Valuta
+	-Oro
+	-Inventario*
+		-Cibo				( Q1 - Q10 )
+		-Armi				( Q1 - Q10 )
+		-Case				( Q1 - Q10 )
+		-Biglietti			( Q1 - Q10 )
+		-Materie Prime		( Q1 - Q10 )
+	-Fabbriche
+		-ID delle fabbriche
+	-Proprietario
+		-Propone leggi
+		-Cambio nome compagnia
+		-Scegliere manager
+		-Gestire valuta e oro
+		-Gestione inventario
+		-Settare min skill
+	-Manager (RadioButton)
+		-Propone leggi
+		-Gestire valuta e oro
+		-Gestione inventario
+		-Settare min skill
+
+-Fabbrica
+	-ID*
+	-Tassa mensile allo stato						//Dipende dal livello di ampliamento. Viene sottratta alla valuta della compagnia e se non viene pagata per 2 mesi di fila l'azienda viene messa all'asta
+	-A rischio?										//Vera se non è stata pagata l'ultima tassa
+	-Livello di miglioramento 	( 1 - 10 )			//Determina la qualità degli elementi prodotti
+	-Livello di Ampliamento		( 1 - 10 )			//Determina la quantità massima di dipendenti e la tassa
+	-Privata?										//L'azienda fa parte di un'organizzazione privata o è dello stato quindi pubblica?
+	-Tipo di fabbrica (RadioButton)
+		-Materie prime cibo
+		-Materie prime armi
+		-Materie prime case
+		-Fabbrica cibo
+		-Fabbrica armi
+		-Fabbrica case
+	-Numero massimo di lavoratori fisso				//Dipende dal livello di ampliamento della fabbrica
+	-Stipendio										//Stipendio per ogni giornata di lavoro (IVA inclusa)
+	-Bonus miglior dipendente mensile				//Il dipendente che avrà prodotto il maggior numero di elementi a fine mese (in caso di parità verrà assegnato a quello con meno valuta, e se la parità persiste, a quello con meno oro, altrimenti in modo casuale)
+	-Bonus dipendente serio							//Bonus per i dipendenti che lavoreranno tutti i giorni del mese
+	-Numero max di lavoratori al giorno
+	Solo se privata:
+		-Numero massimo di lavoratori opzionale
+		-Ingresso libero o ad assunzione?			//Bisogna essere accettati per lavorare nella fabbrica?
+			-Richieste di assunzione
+			
+-War
+	-
