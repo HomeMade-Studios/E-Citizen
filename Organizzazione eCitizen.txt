@@ -14,7 +14,7 @@ Last Update 21/06/2015
 	-Fabbrica
 	-Compagnia
 	-Partito
-	-Unità militare
+	-Unita' militare
 	-Inventario*
 		-Cibo				( Q1 - Q10 )	//Erep
 		-Armi				( Q1 - Q10 )
