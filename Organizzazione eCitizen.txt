@@ -1,5 +1,3 @@
-Last Update 21/06/2015
-
 -Persona
 	-ID*
 	-Nick*
@@ -13,12 +11,7 @@ Last Update 21/06/2015
 	-Lavoro
 	-Partito
 	-Unita' militare
-	-Inventario*
-		-Cibo				( Q1 - Q10 )	//Erep
-		-Armi				( Q1 - Q10 )
-		-Case				( Q1 - Q10 )
-		-Biglietti			( Q1 - Q10 )
-		-Energizzanti
+	-ID inventario
 	-Skill
 		-Produzione cibo
 		-Manifattura
@@ -29,12 +22,7 @@ Last Update 21/06/2015
 	-Nome*
 	-Valuta
 	-Oro
-	-Inventario*
-		-Cibo				( Q1 - Q10 )
-		-Armi				( Q1 - Q10 )
-		-Case				( Q1 - Q10 )
-		-Biglietti			( Q1 - Q10 )
-		-Materie Prime		( Q1 - Q10 )
+	-ID inventario*
 	-Fabbriche
 		-ID delle fabbriche
 	-Proprietario
@@ -55,12 +43,7 @@ Last Update 21/06/2015
 	-Nome*
 	-Valuta
 	-Oro
-	-Inventario*
-		-Cibo				( Q1 - Q10 )
-		-Armi				( Q1 - Q10 )
-		-Case				( Q1 - Q10 )
-		-Biglietti			( Q1 - Q10 )
-		-Materie Prime		( Q1 - Q10 )
+	-ID Inventario*
 	-Fabbriche
 		-ID delle fabbriche
 	-Proprietario
@@ -88,6 +71,17 @@ Last Update 21/06/2015
 		-Fabbrica cibo
 		-Fabbrica armi
 		-Fabbrica case
+		
+-Inventario
+		-ID*
+		-Cibo				( Q1 - Q10 )	//Erep
+		-Armi				( Q1 - Q10 )
+		-Case				( Q1 - Q10 )
+		-Materie Prime Cibo	( Q1 - Q10 )
+		-Materie Prime Armi	( Q1 - Q10 )
+		-Materie Prime Case	( Q1 - Q10 )
+		-Biglietti			( Q1 - Q10 )
+		-Energizzanti
 	
 -Rischiesta di lavoro
 //Da fare
