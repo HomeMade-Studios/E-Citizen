@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
+		<head>
+				<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+				<meta name="format-detection" content="telephone=no">
+				<meta name="msapplication-tap-highlight" content="no">
+				<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+				<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+				<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+				<link rel="stylesheet" type="text/css" href="css/index.css">
+				<title>Hello World</title>
+		</head>
+		<body>
 		<div class="col-xs-12 header">
 			<h1>ECitizen</h1>
 		</div>
-		<div class="nav">
-			<div class="row">
-				<div class="col-xs-1">
-					<button class="btn btn-primary center-block" id="Home" lang="en">Home</button>
-				</div>
-				<div class="col-xs-3">
-					<button class="btn btn-primary center-block" id="Place" lang="en">My places</button>
-				</div>
-				<div class="col-xs-3">
-					<button class="btn btn-primary center-block" id="Market" lang="en">Market</button>
-				</div>
-				<div class="col-xs-3">
-					<button class="btn btn-primary center-block" id="Community" lang="en">Community</button>
-				</div>
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-2">
+				<span id="Citizienship">a</span>
+			</div>
+			<div class="col-xs-4">
+				<span id="User"> 0123456789012345 </span>
+			</div>
+			<div class="col-xs-2">
+				<button class="btn-xs btn-primary" lang="en">
+					Msg
+				</button>
+			</div>
+			<div class="col-xs-2">
+				<button class="btn-xs btn-primary" lang="en">
+					Ntf
+				</button>
+			</div>
+			<div class="col-xs-2">
+				<button class="btn-xs btn-primary" lang="en">
+					Lgo
+				</button>
 			</div>
 		</div>
-		<div style="height:35px">
-		</div>
-		<div class="main">
-			<div class="row">
-				<div class="col-xs-2 duty">
-					<div id="header">
-						<h4>Daily duty:</h4>
-					</div>
-					<div>
-						<p>Work:Not done<br>Train:Not done</p>
-					</div>
-				</div>
+		<div class="row">
+			<div class="btn-group col-xs-3">
+				<button class="btn btn-primary" id="Home" lang="en">
+					Home
+				</button>
+			</div>
+			<div class="btn-group col-xs-3">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Place" lang="en">
+					My places <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#" lang="en">Work</a></li>
+					<li><a href="#" lang="en">rain</a></li>
+					<li><a href="#" lang="en">Inventory</a></li>
+					<li><a href="#" lang="en">Party</a></li>
+					<li><a href="#" lang="en">Militar unit</a></li>
+					<li><a href="#" lang="en">Newspaper</a></li>
+					<li><a href="#" lang="en">Company</a></li>
+					<li><a href="#" lang="en">Country</a></li>
+				</ul>
+			</div>
+			<div class="btn-group col-xs-3">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Market" lang="en">Market
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#" lang="en">Marketplace</a></li>
+					<li><a href="#" lang="en">Monetary market</a></li>
+					<li><a href="#" lang="en">Job market</a></li>
+				</ul>
+			</div>
+			<div class="btn-group col-xs-3">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="War" lang="en">War
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#" lang="en">War</a></li>
+					<li><a href="#" lang="en">World map</a></li>
+					<li><a href="#" lang="en">Alliances</a></li>
+				</ul>
 			</div>
 		</div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading"	lang="en">Daily task:</div>
+				<div class="panel-body"	lang="en">Work: not done <br><br> Train: not done</div>
+			</div>
+		</div>
+		</div>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
-    </body>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		</body>
 </html>
