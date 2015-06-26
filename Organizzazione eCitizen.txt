@@ -74,14 +74,19 @@
 		
 -Inventario
 		-ID*
-		-Cibo				( Q1 - Q10 )	//Erep
-		-Armi				( Q1 - Q10 )
-		-Case				( Q1 - Q10 )
-		-Materie Prime Cibo	( Q1 - Q10 )
-		-Materie Prime Armi	( Q1 - Q10 )
-		-Materie Prime Case	( Q1 - Q10 )
-		-Biglietti			( Q1 - Q10 )
+		-Materie Prime Cibo
+		-Materie Prime Armi
+		-Materie Prime Costruzione
+		-Materie Prime Ticket
+		-Cibo						( Q1 - Q7 )	//Erep
+		-Armi						( Q1 - Q7 )
+		-Case						( Q1 - Q7 )
+		-Hospital					( Q1 - Q5 )
+		-Defense Sistem				( Q1 - Q5 )
+		-Biglietti					( Q1 - Q5 )
+		
+		
 		-Energizzanti
-	
+
 -Rischiesta di lavoro
 //Da fare
