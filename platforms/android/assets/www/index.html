@@ -11,79 +11,78 @@
 				<title>Hello World</title>
 		</head>
 		<body>
-		<div class="col-xs-12 header">
-			<h1>ECitizen</h1>
-		</div>
 		<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-2">
-				<span id="Citizienship">a</span>
+			<div class="row">
+				<div class="col-xs-12 header">
+					<h1>eCitizen</h1>
+				</div>
 			</div>
-			<div class="col-xs-4">
-				<span id="User"> 0123456789012345 </span>
+			<div class="row">
+				<div class="col-xs-2">
+					<span id="Citizienship">a</span>
+				</div>
+				<div class="col-xs-8">
+					<span id="User"> 0123456789ABCDEF </span>
+				</div>
+				<div class="btn-group col-xs-2">
+					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Place" lang="en">
+						Not <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#" lang="en">Message</a></li>
+						<li><a href="#" lang="en">Notifications</a></li>
+						<li><a href="#" lang="en">Logout</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="col-xs-2">
-				<button class="btn-xs btn-primary" lang="en">
-					Msg
-				</button>
+			<div class="row">
+				<div class="btn-group col-xs-3">
+					<form action="index.html">
+						<button class="btn btn-primary" id="Home" lang="en">
+							Home
+						</button>
+					</form>
+				</div>
+				<div class="btn-group col-xs-3">
+					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Place" lang="en">
+						My places <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#" lang="en">Work</a></li>
+						<li><a href="#" lang="en">Train</a></li>
+						<li><a href="#" lang="en">Inventory</a></li>
+						<li><a href="#" lang="en">Party</a></li>
+						<li><a href="#" lang="en">Militar unit</a></li>
+						<li><a href="#" lang="en">Newspaper</a></li>
+						<li><a href="#" lang="en">Company</a></li>
+						<li><a href="#" lang="en">Country</a></li>
+					</ul>
+				</div>
+				<div class="btn-group col-xs-3">
+					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Market" lang="en">Market
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#" lang="en">Marketplace</a></li>
+						<li><a href="#" lang="en">Monetary market</a></li>
+						<li><a href="#" lang="en">Job market</a></li>
+					</ul>
+				</div>
+				<div class="btn-group col-xs-3">
+					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="War" lang="en">War
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#" lang="en">War</a></li>
+						<li><a href="#" lang="en">World map</a></li>
+						<li><a href="#" lang="en">Alliances</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="col-xs-2">
-				<button class="btn-xs btn-primary" lang="en">
-					Ntf
-				</button>
+			<div class="row">
+				<div class="panel panel-default">
+					<div class="panel-heading"	lang="en">Daily task</div>
+					<div class="panel-body"	lang="en">Work: not done <br><br> Train: not done</div>
+				</div>
 			</div>
-			<div class="col-xs-2">
-				<button class="btn-xs btn-primary" lang="en">
-					Lgo
-				</button>
-			</div>
-		</div>
-		<div class="row">
-			<div class="btn-group col-xs-3">
-				<button class="btn btn-primary" id="Home" lang="en">
-					Home
-				</button>
-			</div>
-			<div class="btn-group col-xs-3">
-				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Place" lang="en">
-					My places <span class="caret"></span>
-				</button>
-				<ul class="dropdown-menu" role="menu">
-					<li><a href="#" lang="en">Work</a></li>
-					<li><a href="#" lang="en">rain</a></li>
-					<li><a href="#" lang="en">Inventory</a></li>
-					<li><a href="#" lang="en">Party</a></li>
-					<li><a href="#" lang="en">Militar unit</a></li>
-					<li><a href="#" lang="en">Newspaper</a></li>
-					<li><a href="#" lang="en">Company</a></li>
-					<li><a href="#" lang="en">Country</a></li>
-				</ul>
-			</div>
-			<div class="btn-group col-xs-3">
-				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Market" lang="en">Market
-				<span class="caret"></span></button>
-				<ul class="dropdown-menu" role="menu">
-					<li><a href="#" lang="en">Marketplace</a></li>
-					<li><a href="#" lang="en">Monetary market</a></li>
-					<li><a href="#" lang="en">Job market</a></li>
-				</ul>
-			</div>
-			<div class="btn-group col-xs-3">
-				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="War" lang="en">War
-				<span class="caret"></span></button>
-				<ul class="dropdown-menu" role="menu">
-					<li><a href="#" lang="en">War</a></li>
-					<li><a href="#" lang="en">World map</a></li>
-					<li><a href="#" lang="en">Alliances</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="panel panel-default">
-				<div class="panel-heading"	lang="en">Daily task:</div>
-				<div class="panel-body"	lang="en">Work: not done <br><br> Train: not done</div>
-			</div>
-		</div>
 		</div>
 		<script type="text/javascript" src="cordova.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
