@@ -74,6 +74,11 @@ body {
 	border-width:1px;
 }*/
 
+.img-thumbnail{
+	height:32px;
+	width:32px;
+}
+
 div{
 	text-transform: none;
 }
