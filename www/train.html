@@ -1,19 +1,24 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 		<head>
-				<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-				<meta name="format-detection" content="telephone=no">
-				<meta name="msapplication-tap-highlight" content="no">
-				<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-				<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-				<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-				<link rel="stylesheet" type="text/css" href="css/index.css">
-				<title>eCitizen</title>
+			<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+			<meta name="format-detection" content="telephone=no">
+			<meta name="msapplication-tap-highlight" content="no">
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+			<link rel="stylesheet" type="text/css" href="css/index.css">
+			<title>eCitizen</title>
+			<script type="text/javascript" src="cordova.js"></script>
+			<script type="text/javascript" src="js/jquery.js"></script>
+			<script type="text/javascript" src="js/bootstrap.js"></script>
+			<script type="text/javascript" src="js/index.js"></script>
 		</head>
 		<body>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 header">
+				<div class="col-xs-12 page-header">
 					<h1>eCitizen</h1>
 				</div>
 			</div>
@@ -26,11 +31,11 @@
 				</div>
 				<div class="btn-group col-xs-2">
 					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Place" lang="en">
-						Not <span class="caret"></span>
+						Not<span class="badge">0</span> <span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="#" lang="en">Message</a></li>
-						<li><a href="#" lang="en">Notifications</a></li>
+						<li><a href="#" lang="en">Message<span class="badge">0</span></a></li>
+						<li><a href="#" lang="en">Notifications<span class="badge">0</span></a></li>
 						<li><a href="#" lang="en">Logout</a></li>
 					</ul>
 				</div>
@@ -77,3 +82,40 @@
 					</ul>
 				</div>
 			</div>
+			<div class="row">
+				<div class="panel panel-default">
+					<div class="panel-heading"	lang="en">Train</div>
+					<div class="panel-body"	lang="en">
+						<div id="notTrained">
+							Actual force: <span id="force">0,00</span>
+							<button class="btn btn-primary" id="Train" lang="en">
+								Train
+							</button>
+						</div>
+						<div id="Trained" class="hidden">
+							<table class="table">
+							<thead>
+							  <tr>
+								<th>Experience</th>
+								<th>Energy</th>
+								<th>Strenght gained</th>
+								<th>Total strenght</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td id="Experience">0,00(+0,00)</td>
+								<td id="Energy">-0</td>
+								<td id="StrenghtGain">+0,00</td>
+								<td id="Strenght">0,00</td>
+							  </tr>
+							</tbody>
+						  </table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+			
