@@ -93,6 +93,11 @@ span {
 	font-size: 16px;
 }
 
+#shouts, #intShouts{
+	overflow: auto;
+	line-height:250%;
+}
+
 td,th {
 	text-align: center;
 }
