@@ -1,92 +1,276 @@
 <!DOCTYPE html>
 <html>
 		<head>
-				<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-				<meta name="format-detection" content="telephone=no">
-				<meta name="msapplication-tap-highlight" content="no">
-				<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-				<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-				<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-				<link rel="stylesheet" type="text/css" href="css/index.css">
-				<title>Hello World</title>
+			<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+			<meta name="format-detection" content="telephone=no">
+			<meta name="msapplication-tap-highlight" content="no">
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+			<link rel="stylesheet" type="text/css" href="css/index.css">
+			<title>eCitizen</title>
+			<script type="text/javascript" src="cordova.js"></script>
+			<script type="text/javascript" src="js/jquery.js"></script>
+			<script type="text/javascript" src="js/bootstrap.js"></script>
+			<script type="text/javascript" src="js/index.js"></script>
 		</head>
 		<body>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12 header">
-					<h1>eCitizen</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 page-header">
+						<h1>eCitizen</h1>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2">
-					<span id="Citizienship">a</span>
-				</div>
-				<div class="col-xs-8">
-					<span id="User"> 0123456789ABCDEF </span>
-				</div>
-				<div class="btn-group col-xs-2">
-					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Place" lang="en">
-						Not <span class="caret"></span>
-					</button>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="#" lang="en">Message</a></li>
-						<li><a href="#" lang="en">Notifications</a></li>
-						<li><a href="#" lang="en">Logout</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="btn-group col-xs-3">
-					<form action="index.html">
-						<button class="btn btn-primary" id="Home" lang="en">
-							Home
+				<div class="row">
+					<div class="col-xs-2">
+						<span id="Citizienship">a</span>
+					</div>
+					<div class="col-xs-8">
+						<span id="User"> 0123456789ABCDEF </span>
+					</div>
+					<div class="btn-group col-xs-2">
+						<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Place" lang="en">
+							Not<span class="badge">0</span> <span class="caret"></span>
 						</button>
-					</form>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#" lang="en">Message<span class="badge">0</span></a></li>
+							<li><a href="#" lang="en">Notifications<span class="badge">0</span></a></li>
+							<li><a href="#" lang="en">Logout</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="btn-group col-xs-3">
-					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Place" lang="en">
-						My places <span class="caret"></span>
-					</button>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="#" lang="en">Work</a></li>
-						<li><a href="#" lang="en">Train</a></li>
-						<li><a href="#" lang="en">Inventory</a></li>
-						<li><a href="#" lang="en">Party</a></li>
-						<li><a href="#" lang="en">Militar unit</a></li>
-						<li><a href="#" lang="en">Newspaper</a></li>
-						<li><a href="#" lang="en">Company</a></li>
-						<li><a href="#" lang="en">Country</a></li>
-					</ul>
+				<div class="row">
+					<div class="btn-group col-xs-3">
+						<form action="index.html">
+							<button class="btn btn-primary" id="Home" lang="en">
+								Home
+							</button>
+						</form>
+					</div>
+					<div class="btn-group col-xs-3">
+						<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Place" lang="en">
+							My places <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="work.html" lang="en">Work</a></li>
+							<li><a href="train.html" lang="en">Train</a></li>
+							<li><a href="#" lang="en">Inventory</a></li>
+							<li><a href="#" lang="en">Party</a></li>
+							<li><a href="#" lang="en">Military unit</a></li>
+							<li><a href="#" lang="en">Newspaper</a></li>
+							<li><a href="#" lang="en">Company</a></li>
+							<li><a href="#" lang="en">Country</a></li>
+						</ul>
+					</div>
+					<div class="btn-group col-xs-3">
+						<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Market" lang="en">Market
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#" lang="en">Marketplace</a></li>
+							<li><a href="#" lang="en">Monetary market</a></li>
+							<li><a href="#" lang="en">Job market</a></li>
+						</ul>
+					</div>
+					<div class="btn-group col-xs-3">
+						<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="War" lang="en">War
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#" lang="en">War</a></li>
+							<li><a href="#" lang="en">World map</a></li>
+							<li><a href="#" lang="en">Alliances</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="btn-group col-xs-3">
-					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="Market" lang="en">Market
-					<span class="caret"></span></button>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="#" lang="en">Marketplace</a></li>
-						<li><a href="#" lang="en">Monetary market</a></li>
-						<li><a href="#" lang="en">Job market</a></li>
-					</ul>
+				<div class="row">
+					<div class="panel panel-default">
+						<div class="panel-heading"	lang="en">Daily task</div>
+						<div class="panel-body"	lang="en">Work: not done <br><br> Train: not done</div>
+					</div>
 				</div>
-				<div class="btn-group col-xs-3">
-					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="War" lang="en">War
-					<span class="caret"></span></button>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="#" lang="en">War</a></li>
-						<li><a href="#" lang="en">World map</a></li>
-						<li><a href="#" lang="en">Alliances</a></li>
-					</ul>
+				<div class="row">
+					<div class="panel panel-default col-xs-6">
+						<div class="panel-heading"	lang="en">Battles</div>
+						<div class="panel-body"	lang="en">
+						
+						</div>
+					</div>
+					<div class="panel panel-default col-xs-6">
+						<div class="panel-heading"	lang="en">News</div>
+						<div class="panel-body"	lang="en">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<a data-toggle="tab" href="#nationals">
+										Nationals
+									</a>
+								</li>
+								<li>
+									<a data-toggle="tab" href="#internationals">
+										Internationals
+									</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div id="nationals" class="tab-pane fade in active">
+									<ul >
+										<li>
+											<img class="img-thumbnail" src="img/logo.png">
+											<a id="newsNat" href="#">
+												Le cose cosate!!!
+											</a>
+										</li>
+										<li>
+											<img class="img-thumbnail" src="img/logo.png">
+											<a id="newsNat" href="#">
+												Le cose cosate!!!
+											</a>
+										</li>
+										<li>
+											<img class="img-thumbnail" src="img/logo.png">
+											<a id="newsNat" href="#">
+												Le cose cosate!!!
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div id="internationals" class="tab-pane fade in">
+									<ul >
+										<li>
+											<img class="img-thumbnail" src="img/logo.png">
+											<a id="newsInt" href="#">
+												The things thinged!!!
+											</a>
+										</li>
+										<li>
+											<img class="img-thumbnail" src="img/logo.png">
+											<a id="newsInt" href="#">
+												The things thinged!!!
+											</a>
+										</li>
+										<li>
+											<img class="img-thumbnail" src="img/logo.png">
+											<a id="newsInt" href="#">
+												The things thinged!!!
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="panel panel-default">
+						<div class="panel-heading"	lang="en">Shout</div>
+						<div class="panel-body"	lang="en">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<a data-toggle="tab" href="#shouts">
+										Nationals
+									</a>
+								</li>
+								<li>
+									<a data-toggle="tab" href="#intShouts">
+										Internationals
+									</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div id="shouts" class="tab-pane fade in active">
+									<div id="shout">
+										<a href="#" id="userShout">
+											Giancarlo: 
+										</a>
+										<span id="shoutM">
+											È ora di dire basta!
+										</span>
+									</div>
+										<div id="shout">
+										<a href="#" id="userShout">
+											Giancarlo: 
+										</a>
+										<span id="shoutM">
+											È ora di dire basta!
+										</span>
+									</div>
+									<div id="shout">
+										<a href="#" id="userShout">
+											Giancarlo: 
+										</a>
+										<span id="shoutM">
+											È ora di dire basta!
+										</span>
+									</div>
+									<div id="shout">
+										<a href="#" id="userShout">
+											Giancarlo: 
+										</a>
+										<span id="shoutM">
+											È ora di dire basta!
+										</span>
+									</div>
+									<div id="shout">
+										<a href="#" id="userShout">
+											Giancarlo: 
+										</a>
+										<span id="shoutM">
+											È ora di dire basta!
+										</span>
+									</div>
+									<div class="form-group">
+										<label for="thisShout">Publish your shout:</label>
+										<textarea class="form-control" rows="2" id="thisShout"></textarea>
+										<button class="btn btn-default" id="publish" lang="en">
+											Publish
+										</button>
+									</div>
+								</div>
+								<div id="intShouts" class="tab-pane fade in">
+									<div id="shoutInt">
+										<a href="#" id="userShout">
+											Giancarl: 
+										</a>
+										<span id="shoutM">
+											It's time to say basta!
+										</span>
+									</div>
+									<div id="shoutInt">
+										<a href="#" id="userShout">
+											Giancarl: 
+										</a>
+										<span id="shoutM">
+											It's time to say basta!
+										</span>
+									</div>
+									<div id="shoutInt">
+										<a href="#" id="userShout">
+											Giancarl: 
+										</a>
+										<span id="shoutM">
+											It's time to say basta!
+										</span>
+									</div>
+									<div id="shoutInt">
+										<a href="#" id="userShout">
+											Giancarl: 
+										</a>
+										<span id="shoutM">
+											It's time to say basta!
+										</span>
+									</div>
+									<div id="shoutInt">
+										<a href="#" id="userShout">
+											Giancarl: 
+										</a>
+										<span id="shoutM">
+											It's time to say basta!
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="panel panel-default">
-					<div class="panel-heading"	lang="en">Daily task</div>
-					<div class="panel-body"	lang="en">Work: not done <br><br> Train: not done</div>
-				</div>
-			</div>
-		</div>
-		<script type="text/javascript" src="cordova.js"></script>
-		<script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/bootstrap.js"></script>
 		</body>
 </html>
